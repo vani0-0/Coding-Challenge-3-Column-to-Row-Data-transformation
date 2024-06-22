@@ -1,0 +1,11 @@
+{
+  "files.associations": {
+    "stdio.h": "c",
+    "regex": "c",
+    "sll.h": "c",
+    "stdbool.h": "c",
+    "system_error": "c",
+    "library.h": "c",
+    "stdlib.h": "c"
+  }
+}

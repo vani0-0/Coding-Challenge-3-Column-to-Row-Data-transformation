@@ -1,0 +1,40 @@
+EXPECTED OUTPUT
+
+original data:
+-------------------------------------
+| code  | Text  | en-US | fl-PH     |
+————————————————---------------------
+| HELLO | Hello | Hello | Kumusta   |
+
+NOTE: translations nalang i didisplay ko dito
+Expected output:
+--------------------------------
+| Code    | Culture | Value
+———————————------------------- 
+| HELLO   | en-US   | Hello
+| HELLO   | fl-PH   | Kumusta
+
+Translation
+    CODE
+    WORD
+
+    PROPERTY
+        CHINESE
+        ENGLISH
+        ETC.
+
+LIBRARY: {
+    PROPERTY: []
+    WORDS: [{
+        CODE: 
+        WORD: 
+        TRANSLATION: [
+            VALUE
+        ]
+    }] 
+}
+
+LIBRARY
+    - PROPERTY [en-US fl-PH]
+    - WORDS [{'CODE', 'WORD'}]
+    - TRANSLATION ['CODE', 'VALUE', 'PROPERTY']
