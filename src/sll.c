@@ -145,6 +145,12 @@ bool validationTime(NODEPTR head, char *target, TYPES type)
                 res = true;
             }
             break;
+        case TRANSLATION_TYPE2:
+            if (strcmp(current->data.str, target) == 0)
+            {
+                res = true;
+            }
+            break;
         default:
             printf("Unsupported data type.\n");
             return true;

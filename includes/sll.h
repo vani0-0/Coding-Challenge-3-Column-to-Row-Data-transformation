@@ -18,7 +18,8 @@ typedef enum
 {
     STRING_TYPE,
     WORD_TYPE,
-    TRANSLATION_TYPE
+    TRANSLATION_TYPE,
+    TRANSLATION_TYPE2
 } TYPES;
 
 typedef struct Node *NODEPTR;

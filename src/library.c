@@ -81,6 +81,11 @@ void AddTranslation(LIBRARY *lib, TRANSLATION translation)
         printf("\x1b[31mNot found Error: Word Code: \"%s\" does not exist.\x1b[0m\n", translation.code);
         return;
     }
+    if (!validationTime((*lib)->languages, translation.culture, TRANSLATION_TYPE2))
+    {
+        printf("\x1b[31mNot found Error: Culture: \"%s\" does not exist.\x1b[0m\n", translation.culture);
+        return;
+    }
     insert(&(*lib)->translations, &translation, TRANSLATION_TYPE);
 }
 
